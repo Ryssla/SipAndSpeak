@@ -18,16 +18,18 @@ body {
 
 /* --- Navbar --- */
 .navbar {
-  display: flex;
+ display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 3rem;
   background-color: var(--beige);
   position: fixed;
-  width: 100%;
+  width: 100vw; /* CHANGEMENT ICI */
+  left: 0; /* AJOUT */
   top: 0;
   z-index: 100;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  box-sizing: border-box;
 }
 
 .logo {
@@ -147,3 +149,4 @@ body {
   font-family: var(--font-title);
   margin-bottom: 1rem;
 }
+
