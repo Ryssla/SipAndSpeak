@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sip & Speak - Café linguistique</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/genty" rel="stylesheet">
+</head>
+<body>
+  <header class="hero">
+    <nav class="navbar">
+      <div class="logo">
+        <img src="images/mini.png" alt="Sip & Speak - Café Linguistique" class="logo-img">
+      </div>
+      <ul>
+        <li><a href="#concept">Concept</a></li>
+        <li><a href="events.html">Événements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content">
+      <h2>Discover the world, sip by sip.</h2>
+      <a href="#evenements" class="btn">Actu évènement</a>
+    </div>
+  </header>
+
+  <section id="concept" class="section concept">
+    <h2>Le concept</h2>
+    <p>
+      Chez <strong>Sip & Speak</strong>, on allie l'amour du café et celui des langues.
+      Venez partager un moment convivial autour d'une boisson, pratiquer une langue
+      étrangère, et découvrir de nouvelles cultures — une gorgée à la fois. <br>
+      Nous sommes ouvert <em><strong> tout les jours</strong></em> de 10h à 19h. <br> Après 19h préparation des soirées et activités. 
+    </p>
+  </section>
+
+  <section id="evenements" class="section events">
+    <h2>Nos événements</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Soirée Cinéma</h3>
+        <p>Chaque mercredi, rejoignez nous pour une projection de film venant du monde entier et profites d'un cappuccino venu d'ailleurs.</p>
+      </div>
+      <div class="card">
+        <h3>Ton café t'aides à développer ta créativité !</h3>
+        <p>Un samedi sur deux,on te propose des activités créatives: ateliers peintures, céramiques et bien d'autres. Donc n'hésite pas et viens profiter avec nous!</p>
+      </div>
+      <div class="card">
+        <h3>Brunch Polyglotte</h3>
+        <p>Un dimanche par mois, découvrez un brunch multiculturel avec des ateliers linguistiques variés.</p>
+      </div>
+    </div>
+  </section>
+  
+  <section id="instagram" class="section instagram-section">
+    <div class="container">
+      <h2>Rejoins-nous sur Instagram</h2>
+      <p>Suis notre actualité en temps réel et découvre les coulisses de Sip & Speak</p>
+      <a href="https://www.instagram.com/sipandspeak2.0?igsh=MXJwZ3N1NTRidGx1Yw==" target="_blank" class="instagram-btn">
+        <span>📸 @sipandspeak2.0</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Section Affiches -->
+<section id="affiches" class="section affiches-section">
+    <div class="container">
+        <h2>Nos Affiches</h2>
+        <p>Découvrez nos dernières affiches</p>
+        
+        <div class="affiches-grid">
+            <!-- Affiche 1 -->
+            <div class="affiche-card">
+                <div class="affiche-image-container">
+                    <img src="images/menue.png" alt="Affiche en anglais du menu d'Halloween" class="affiche-image">
+                    <div class="image-overlay">
+                        <button class="view-full-btn" onclick="openFullImage('images/menue.png')">👁️ Voir en entier</button>
+                    </div>
+                </div>
+                <h3>Notre menu pendant la période d'Halloween</h3>
+            </div>
+
+            <!-- Affiche 2 -->
+            <div class="affiche-card">
+                <div class="affiche-image-container">
+                    <img src="images/affiche-janvier.jpg" alt="Affiche Janvier 2024" class="affiche-image">
+                    <div class="image-overlay">
+                        <button class="view-full-btn" onclick="openFullImage('images/affiche-janvier.jpg')">👁️ Voir en entier</button>
+                    </div>
+                </div>
+                <h3>Affiche Janvier 2024</h3>
+                <p>Programme du mois de janvier</p>
+            </div>
+
+            <!-- Affiche 3 -->
+            <div class="affiche-card">
+                <div class="affiche-image-container">
+                    <img src="images/affiche-janvier.jpg" alt="Affiche Janvier 2024" class="affiche-image">
+                    <div class="image-overlay">
+                        <button class="view-full-btn" onclick="openFullImage('images/affiche-janvier.jpg')">👁️ Voir en entier</button>
+                    </div>
+                </div>
+                <h3>Affiche Janvier 2024</h3>
+                <p>Programme du mois de janvier</p>
+            </div>
+        </div>
+        
+        <p class="affiches-note">Les affiches sont régulièrement mises à jour avec notre programmation</p>
+    </div>
+</section>
+
+<!-- Modal pour voir l'image en plein écran -->
+<div id="imageModal" class="image-modal">
+    <span class="close-modal" onclick="closeFullImage()">&times;</span>
+    <img class="modal-content" id="fullImage">
+    <div class="modal-caption" id="imageCaption"></div>
+</div>
+
+  <footer id="contact" class="footer">
+    <h2>Contact</h2>
+    <p>📍 28 rue des tonneliers, 67000 Strabourg</p>
+    <p>📧 contact@sipandspeak.fr</p>
+    <p>© 2025 Sip & Speak - Discover the world, sip by sip.</p>
+  </footer>
+
+  <!-- POPUP COOKIES -->
+  <div class="cookie-popup" id="cookiePopup">
+    <img src="images/1047711.png" alt="Cookie mignon souriant">
+    <div>
+      <p><strong>Nos cookies</strong> 🍪 ne sont pas aussi savoureux que les vrais mais...<br>
+      Ils nous aident à rendre ton expérience chez <strong>Sip & Speak</strong> encore plus douce.</p>
+      <div class="cookie-buttons">
+        <button class="cookie-btn accept" onclick="acceptCookies()">Accepter</button>
+        <button class="cookie-btn settings" onclick="openModal()">Personnaliser</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODALE DE PRÉFÉRENCES -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <button class="close-btn" onclick="closeModal()">✖</button>
+      <img src="images/1047711.png" alt="Cookie mignon" class="cookie-img">
+      <h2>Préférences cookies 🍪</h2>
+
+      <div class="cookie-type">
+        <label>Essentiels</label>
+        <div class="switch">
+          <input type="checkbox" checked disabled>
+          <span class="slider"></span>
+        </div>
+      </div>
+
+      <div class="cookie-type">
+        <label>Performance</label>
+        <div class="switch">
+          <input type="checkbox" id="perf">
+          <span class="slider"></span>
+        </div>
+      </div>
+
+      <div class="cookie-type">
+        <label>Personnalisation</label>
+        <div class="switch">
+          <input type="checkbox" id="perso">
+          <span class="slider"></span>
+        </div>
+      </div>
+
+      <div class="cookie-type">
+        <label>Marketing</label>
+        <div class="switch">
+          <input type="checkbox" id="ads">
+          <span class="slider"></span>
+        </div>
+      </div>
+
+      <div class="modal-buttons">
+        <button onclick="acceptAll()">Tout accepter 🍰</button>
+        <button onclick="savePrefs()">Enregistrer</button>
+      </div>
+    </div>
+  </div>
+  <script>
+// Fonctions pour la visualisation des images en plein écran
+function openFullImage(imageSrc) {
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('fullImage');
+    modal.style.display = 'block';
+    modalImg.src = imageSrc;
+}
+
+function closeFullImage() {
+    document.getElementById('imageModal').style.display = 'none';
+}
+
+// Fermer la modal en cliquant en dehors de l'image
+document.getElementById('imageModal').addEventListener('click', function(e) {
+    if (e.target === this) {
+        closeFullImage();
+    }
+});
+
+// Fermer avec la touche Echap
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeFullImage();
+    }
+});
+
+// Fonctions pour les cookies (existantes)
+function acceptCookies() {
+    document.getElementById('cookiePopup').style.display = 'none';
+    localStorage.setItem('cookiesAccepted', 'true');
+}
+
+function openModal() {
+    document.getElementById('modalOverlay').style.display = 'flex';
+}
+
+function closeModal() {
+    document.getElementById('modalOverlay').style.display = 'none';
+}
+
+function acceptAll() {
+    document.getElementById('perf').checked = true;
+    document.getElementById('perso').checked = true;
+    document.getElementById('ads').checked = true;
+    alert("Tous les cookies ont été acceptés ! 🍪");
+    closeModal();
+}
+
+function savePrefs() {
+    alert("Tes préférences ont été enregistrées ☕");
+    closeModal();
+}
+</script>
+
+  
+</body>
+</html>
